@@ -1,0 +1,9 @@
+docs
+
+*.md
+
+!README.md
+
+/pycache/
+*.pyc
+/venv/
