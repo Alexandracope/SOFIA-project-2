@@ -1,0 +1,34 @@
+version: '3.7'
+services:
+  service1:
+    build: ./service1
+    ports:
+    - target: 5000
+      published: 5000
+      protocol: tcp
+    depends_on:
+    - service4
+    
+  Service2:
+    build: ./Service2
+    ports:
+    - target: 5000
+      published: 5001
+      protocol: tcp
+      
+  service3:
+    build: ./service3
+    ports:
+    - target: 5000
+      published: 5002
+      protocol: tcp
+      
+  service4:
+    build: ./service4
+    ports:
+    - target: 5000
+      published: 5003
+      protocol: tcp
+    depends_on:
+    - Service2 
+    - service3
