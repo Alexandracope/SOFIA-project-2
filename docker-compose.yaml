@@ -9,8 +9,8 @@ services:
     depends_on:
     - service4
     
-  Service2:
-    build: ./Service2
+  service2:
+    build: ./service2
     ports:
     - target: 5000
       published: 5001
