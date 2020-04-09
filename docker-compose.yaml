@@ -30,5 +30,5 @@ services:
       published: 5003
       protocol: tcp
     depends_on:
-    - Service2 
+    - service2 
     - service3
