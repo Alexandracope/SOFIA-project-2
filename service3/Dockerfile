@@ -16,7 +16,7 @@ COPY . ${WORKDIR}
 RUN pip3 install -r requirements.txt
 
 # Expose correct port
-EXPOSE 5003
+EXPOSE 5002
 
 # Create an entrypoint
 ENTRYPOINT ["/usr/local/bin/python3", "app.py"]
