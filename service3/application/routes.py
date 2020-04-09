@@ -9,6 +9,6 @@ from random import randint
 # define routes for /medium , this function will be called when these are accessed
 @app.route('/medium', methods = ['GET'])
 def medium():
-    medium = ['Pencil', 'Acrylic paint','Water colour paint','Crayons', 'Coloured Pencils', 'Newspaper']
+    medium = ['Pencil', 'Acrylic Paint','Watercolour Paint','Crayons', 'Coloured Pencils', 'Newspaper']
     return Response(medium[randint(0,5)], mimetype='text/plain')
 
