@@ -1,5 +1,6 @@
 # import request & Response function from the flask module
 from flask import request, Response
+import requests
 
 # import the app object from the ./application/__init__.py
 from application import app

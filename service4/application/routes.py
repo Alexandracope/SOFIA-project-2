@@ -1,6 +1,7 @@
 # import request & Response function from the flask module
 from flask import request, Response
 import random
+import requests
 
 # import the app object from the ./application/__init__.py
 from application import app
@@ -8,8 +9,11 @@ from application import app
 # define routes for /medium , this function will be called when these are accessed
 @app.route('/generator', methods = ['GET'])
 def generator():
-    color = request.get('http://service2:5001/color')
-    medium = request.get('http://service3:5002/medium')
+    colour_response = requests.get('http://service2:5001/colour')
+    medium_response = requests.get('http://service3:5002/medium')
+    colour = colour_response.text
+    medium = medium_response.text
+
 
     array = ["Obj1" , "Obj2" , "Obj3" , "Obj4", "Obj5", "Obj6" , "Obj7", "Obj8" , "Obj9" , "Obj10", "Obj11" , "Obj12" , "Obj13" , "Obj14" , "Obj15" , "Obj16" , "Obj17" , "Obj18" , "Obj19", "Obj20" , "Obj21", "Obj22", "Obj23", "Obj24" , "Obj25" , "Obj26" , "Obj27" , "Obj28"]
 
@@ -116,5 +120,5 @@ def generator():
         elif colour == "Green":
             subject = array[random.randrange(25,28)]
 
-    random = (str(shades) + " " + "shades only" + " ,your Subject is " + colour.text + " " +  subject)
+    random = (str(shades) + " " + "shades only" + " ,your Subject is " + colour + " " +  subject)
     return random
