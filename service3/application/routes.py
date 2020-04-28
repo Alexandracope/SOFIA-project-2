@@ -9,6 +9,5 @@ import random
 # define routes for /medium , this function will be called when these are accessed
 @app.route('/medium', methods = ['GET'])
 def medium():
-    medium = ['Pencil', 'Acrylic Paint','Watercolour Paint','Crayons', 'Coloured Pencils', 'Newspaper']
+    medium = ['Pencil','Acrylic Paint','Watercolour Paint','Crayons', 'Coloured Pencils', 'Newspaper']
     return medium[random.randrange(6)]
-
