@@ -1,5 +1,4 @@
 # import request & Response function from the flask module
-from flask import request, Response
 import random
 import requests
 
@@ -7,7 +6,7 @@ import requests
 from application import app
 
 # define routes for /medium , this function will be called when these are accessed
-@app.route('/generator', methods = ['GET'])
+@app.route('/generator', methods = ['GET','POST'])
 def generator():
     colour_response = requests.get('http://service2:5001/colour')
     medium_response = requests.get('http://service3:5002/medium')
@@ -16,10 +15,10 @@ def generator():
 
 
     array = ["Obj1" , "Obj2" , "Obj3" , "Obj4", "Obj5", "Obj6" , "Obj7", "Obj8" , "Obj9" , "Obj10", "Obj11" , "Obj12" , "Obj13" , "Obj14" , "Obj15" , "Obj16" , "Obj17" , "Obj18" , "Obj19", "Obj20" , "Obj21", "Obj22", "Obj23", "Obj24" , "Obj25" , "Obj26" , "Obj27" , "Obj28"]
-
+    shades = 0
 
     if medium == "Watercolour Paint":
-        shades = random.randint(2,9)
+        shades = random.randint(2,20)
         if colour == "Red":
             subject = array[random.randrange(0,4)]
         elif colour == "Yellow":
@@ -36,7 +35,7 @@ def generator():
             subject = array[random.randrange(25,28)]
 
     if medium == "Acrylic Paint":
-        shades = random.randint(2,17)
+        shades = random.randint(2,20)
         if colour == "Red":
             subject = array[random.randrange(0,4)]
         elif colour == "Yellow":
@@ -53,7 +52,7 @@ def generator():
             subject = array[random.randrange(25,28)]
 
     if medium == "Pencil":
-        shades = random.randint(2,8)
+        shades = random.randint(2,20)
         if colour == "Red":
             subject = array[random.randrange(0,4)]
         elif colour == "Yellow":
@@ -70,7 +69,7 @@ def generator():
             subject = array[random.randrange(25,28)]
 
     if medium == "Crayons":
-        shades = random.randint(2,10)
+        shades = random.randint(2,20)
         if colour == "Red":
             subject = array[random.randrange(0,4)]
         elif colour == "Yellow":
@@ -87,7 +86,7 @@ def generator():
             subject = array[random.randrange(25,28)]
 
     if medium == "Coloured Pencils":
-        shades = random.randint(2,10)
+        shades = random.randint(2,20)
         if colour == "Red":
             subject = array[random.randrange(0,4)]
         elif colour == "Yellow":
@@ -120,5 +119,5 @@ def generator():
         elif colour == "Green":
             subject = array[random.randrange(25,28)]
 
-    random = (str(shades) + " " + "shades only" + " ,your Subject is " + colour + " " +  subject)
-    return random
+    return (str(shades) + " " + "shades only" + " using the medium " + medium + " and your Subject is a " + colour + " " +  subject)
+    
