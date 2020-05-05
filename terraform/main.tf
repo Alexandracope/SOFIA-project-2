@@ -76,5 +76,47 @@ resource "azurerm_virtual_machine" "main" {
     }
 
   }
+
+
+  provisioner "file" {
+    connection {
+      host        = azurerm_public_ip.main.ip_address
+      type        = "ssh"
+      user        = var.admin_username
+      private_key = file("~/.ssh/id_rsa")
+    }
+
+    source      = "~/SOFIA-project-2/terraform/keys/.ssh/id_rsa.pub"
+    destination = "/home/craft/.ssh/jenkins.pub"
+  }
+
+  provisioner "file" {
+    connection {
+      host        = azurerm_public_ip.main.ip_address
+      type        = "ssh"
+      user        = var.admin_username
+      private_key = file("~/.ssh/id_rsa")
+    }
+
+    source      = "~/scripts/inst_docker"
+    destination = "inst_docker"
+  }
+
+  provisioner "file" {
+    connection {
+      host        = azurerm_public_ip.main.ip_address
+      type        = "ssh"
+      user        = var.admin_username
+      private_key = file("~/.ssh/id_rsa")
+    }
+
+    source      = "~/scripts/inst_jenkins"
+    destination = "inst_jenkins"
+  }
+
 }
+
+
+
+
 
