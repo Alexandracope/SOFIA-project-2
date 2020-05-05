@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: craft
+  labels:
+    app: craft
+spec:
+  containers:
+  - name: service1
+    image: yasirsatti/cipipeline_service1
+    ports:
+    - containerPort: 5000
+  - name: service2
+    image: yasirsatti/cipipeline_service2
+    ports:
+    - containerPort: 5001
+  - name: service3
+    image: yasirsatti/cipipeline_service3
+    ports:
+    - containerPort: 5002
+  - name: service4
+    image: yasirsatti/cipipeline_service4
+    ports:
+    - containerPort: 5003
+  imagePullSecrets:
+    - name: dockerk8s
