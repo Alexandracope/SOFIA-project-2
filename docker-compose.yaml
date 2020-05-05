@@ -8,7 +8,8 @@ services:
       protocol: tcp
     depends_on:
     - service4
-    
+    - mysqldb
+      
   service2:
     build: ./service2
     ports:
@@ -32,3 +33,12 @@ services:
     depends_on:
     - service2 
     - service3
+
+  mysqldb:
+    build: ./db 
+    ports:
+    - target: 3306
+      published: 3306
+      protocol: tcp
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}

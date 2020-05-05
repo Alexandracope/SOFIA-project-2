@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: craft
+  labels:
+    app: craft
+spec:
+  containers:
+  - name: service1
+    image: yasirsatti/chaperoo-client
+    ports:
+    - containerPort: 80
+  - name: chaperoo-service
+    image: yasirsatti/chaperoo-service
+    ports:
+    - containerPort: 3000
+  - name: chaperoo-db
+    image: yasirsatti/chaperoo-db
+    ports:
+    - containerPort: 3306
+    env:
+      - name: MYSQL_ROOT_PASSWORD
+        value: "root"
+
+  - name: jenkins
+    image: jenkins/jenkins:latest
+    ports:
+    - containerPort: 8080
+  imagePullSecrets:
+    - name: dockerk8s
