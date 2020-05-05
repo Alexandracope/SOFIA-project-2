@@ -37,7 +37,7 @@ services:
     - service2 
     - service3
   
-   jenkins:
-     image: jenkins/jenkins:latest
-     environment:
-       - JENKINS_OPTS="--prefix=/jenkins"
+  jenkins:
+    image: jenkins/jenkins:latest
+    environment:
+      - JENKINS_OPTS="--prefix=/jenkins"
