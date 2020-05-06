@@ -1,26 +1,148 @@
-apiVersion: v1
-kind: Pod
+apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: craft
+  name: service1
   labels:
-    app: craft
+    app: service1
 spec:
-  containers:
-  - name: service1
-    image: yasirsatti/craft-srv1
-    ports:
-    - containerPort: 5000
-  - name: service2
-    image: yasirsatti/craft-srv2
-    ports:
-    - containerPort: 5001
-  - name: service3
-    image: yasirsatti/craft-srv3
-    ports:
-    - containerPort: 5002
-  - name: service4
-    image: yasirsatti/craft-srv4
-    ports:
-    - containerPort: 5003
-  imagePullSecrets:
-    - name: dockerk8s
+  replicas: 2
+  selector:
+    matchLabels:
+      app: service1
+  template:
+    metadata:
+      labels:
+        app: service1
+    spec:
+      containers:
+      - name: service1
+        image: yasirsatti/craft-srv1
+        imagePullPolicy: "Always"
+        ports:
+        - containerPort: 5000
+      imagePullSecrets:
+        - name: dockerk8s
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: service1
+spec:
+  ports:
+  - name: "80"
+    port: 80
+    targetPort: 5000
+  selector:
+    app: service1
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: service2
+  labels:
+    app: service2
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: service2
+  template:
+    metadata:
+      labels:
+        app: service2
+    spec:
+      containers:
+      - name: service2
+        image: yasirsatti/craft-srv2
+        imagePullPolicy: "Always"
+        ports:
+        - containerPort: 5001
+      imagePullSecrets:
+        - name: dockerk8s
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: service2
+spec:
+  ports:
+  - name: "5001"
+    port: 5001
+    targetPort: 5001
+  selector:
+    app: service2
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: service3
+  labels:
+    app: service3
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: service3
+  template:
+    metadata:
+      labels:
+        app: service3
+    spec:
+      containers:
+      - name: service3
+        image: yasirsatti/craft-srv3
+        imagePullPolicy: "Always"
+        ports:
+        - containerPort: 5002
+      imagePullSecrets:
+        - name: dockerk8s
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: service3
+spec:
+  ports:
+  - name: "5002"
+    port: 5002
+    targetPort: 5002
+  selector:
+    app: service3
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: service4
+  labels:
+    app: service4
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: service4
+  template:
+    metadata:
+      labels:
+        app: service4
+    spec:
+      containers:
+      - name: service4
+        image: yasirsatti/craft-srv4
+        imagePullPolicy: "Always"
+        ports:
+        - containerPort: 5003
+      imagePullSecrets:
+        - name: dockerk8s
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: service4
+spec:
+  ports:
+  - name: "5003"
+    port: 5003
+    targetPort: 5003
+  selector:
+    app: service4
