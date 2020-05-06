@@ -3,7 +3,6 @@ from application import routes
 
 def test_generator():
 
-    # colour == Red, Watercolour Paint
     assert routes.generator() == ("2 shades only using the medium Watercolour Paint and your Subject is a Red Obj1") \
         or routes.generator() == ("2 shades only using the medium Watercolour Paint and your Subject is a Red Obj2") \
             or routes.generator() == ("2 shades only using the medium Watercolour Paint and your Subject is a Red Obj3") \

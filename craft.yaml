@@ -7,24 +7,20 @@ metadata:
 spec:
   containers:
   - name: service1
-    image: yasirsatti/chaperoo-client
+    image: yasirsatti/craft-srv1
     ports:
-    - containerPort: 80
-  - name: chaperoo-service
-    image: yasirsatti/chaperoo-service
+    - containerPort: 5000
+  - name: service2
+    image: yasirsatti/craft-srv2
     ports:
-    - containerPort: 3000
-  - name: chaperoo-db
-    image: yasirsatti/chaperoo-db
+    - containerPort: 5001
+  - name: service3
+    image: yasirsatti/craft-srv3
     ports:
-    - containerPort: 3306
-    env:
-      - name: MYSQL_ROOT_PASSWORD
-        value: "root"
-
-  - name: jenkins
-    image: jenkins/jenkins:latest
+    - containerPort: 5002
+  - name: service4
+    image: yasirsatti/craft-srv4
     ports:
-    - containerPort: 8080
+    - containerPort: 5003
   imagePullSecrets:
     - name: dockerk8s

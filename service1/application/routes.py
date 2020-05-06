@@ -1,5 +1,5 @@
 from flask import render_template
-from application import app, mysql, cnx
+from application import app
 from flask_mysqldb import MySQL
 import requests
 
@@ -11,9 +11,9 @@ def home():
     random = response.text
     
     # Mysql commands used to insert result of get request to database table
-    cur = mysql.connection.cursor()
-    cur.execute("INSERT INTO result(result)VALUES(%s)", [random])
-    mysql.connection.commit()
-    cur.close()
+    # cur = mysql.connection.cursor()
+    # cur.execute("INSERT INTO result(result)VALUES(%s)", [random])
+    # mysql.connection.commit()
+    # cur.close()
 
     return render_template('home.html',random=random, title='Home')
