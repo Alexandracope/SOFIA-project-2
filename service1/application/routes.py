@@ -13,7 +13,10 @@ def home():
     random = response.text
     # Mysql commands used to insert result of get request to database table
     cur = mysql.connection.cursor()
-    cur.execute("INSERT INTO result(result)VALUES(%s)", [random])
-    mysql.connection.commit()
-    cur.close()
+    #table is created in database
+    cur.execute('''CREATE TABLE result (id INTEGER, result VARCHAR(50))''')
+    # hash code above after first run should come up with error table already created when button pressed then unhash the last three lines
+    # cur.execute("INSERT INTO result(result)VALUES(%s)", [random])
+    # mysql.connection.commit()
+    # cur.close()
     return render_template('home.html',random=random, title='Home')
