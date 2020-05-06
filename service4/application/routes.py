@@ -20,24 +20,24 @@ def generator():
     shades = 0
 
     if medium == "Watercolour Paint":
-        shades = random.randint(2,20)
+        shades = random.randint(2,11)
         if colour == "Red":
-            subject = array[random.randrange(0,4)]
+            subject = array[random.randrange(0,5)] #Dog to House
         elif colour == "Yellow":
-            subject = array[random.randrange(5,8)]
+            subject = array[random.randrange(5,9)] #Tractor to horse
         elif colour == "Pink":
-            subject = array[random.randrange(9,12)]
+            subject = array[random.randrange(9,13)] 
         elif colour == "Blue":
-            subject = array[random.randrange(13,16)]
+            subject = array[random.randrange(13,16)] 
         elif colour == "Orange":
-            subject = array[random.randrange(17,20)]
+            subject = array[random.randrange(17,20)] 
         elif colour == "Purple":
-            subject = array[random.randrange(21,24)]
+            subject = array[random.randrange(21,24)] 
         elif colour == "Green":
-            subject = array[random.randrange(25,28)]
+            subject = array[random.randrange(25,28)]  
 
     if medium == "Acrylic Paint":
-        shades = random.randint(2,20)
+        shades = random.randint(2,11)
         if colour == "Red":
             subject = array[random.randrange(0,4)]
         elif colour == "Yellow":
@@ -54,7 +54,7 @@ def generator():
             subject = array[random.randrange(25,28)]
 
     if medium == "Pencil":
-        shades = random.randint(2,20)
+        shades = random.randint(2,11)
         if colour == "Red":
             subject = array[random.randrange(0,4)]
         elif colour == "Yellow":
@@ -71,7 +71,7 @@ def generator():
             subject = array[random.randrange(25,28)]
 
     if medium == "Crayons":
-        shades = random.randint(2,20)
+        shades = random.randint(2,11)
         if colour == "Red":
             subject = array[random.randrange(0,4)]
         elif colour == "Yellow":
@@ -88,7 +88,7 @@ def generator():
             subject = array[random.randrange(25,28)]
 
     if medium == "Coloured Pencils":
-        shades = random.randint(2,20)
+        shades = random.randint(2,11)
         if colour == "Red":
             subject = array[random.randrange(0,4)]
         elif colour == "Yellow":
@@ -105,7 +105,7 @@ def generator():
             subject = array[random.randrange(25,28)]
 
     if medium == "Newspaper":
-        shades = random.randint(2,20)
+        shades = random.randint(2,11)
         if colour == "Red":
             subject = array[random.randrange(0,4)]
         elif colour == "Yellow":
