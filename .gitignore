@@ -2,3 +2,6 @@
 /__pycache__/*
 *.pyc
 .vscode/*
+/terraform/*
+!/terraform/main.tf
+!/terraform/outputs.tf

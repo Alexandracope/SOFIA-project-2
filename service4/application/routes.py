@@ -11,10 +11,12 @@ def generator():
     colour_response = requests.get('http://service2:5001/colour')
     medium_response = requests.get('http://service3:5002/medium')
     colour = colour_response.text
+    # colour = 'Yellow'
     medium = medium_response.text
+    # medium = 'Watercolour Paint'
 
 
-    array = ["Obj1" , "Obj2" , "Obj3" , "Obj4", "Obj5", "Obj6" , "Obj7", "Obj8" , "Obj9" , "Obj10", "Obj11" , "Obj12" , "Obj13" , "Obj14" , "Obj15" , "Obj16" , "Obj17" , "Obj18" , "Obj19", "Obj20" , "Obj21", "Obj22", "Obj23", "Obj24" , "Obj25" , "Obj26" , "Obj27" , "Obj28"]
+    array = ["Dog" , "Elephant" , "Bear" , "Cat", "House", "Tractor" , "Disney Character", "Room" , "Horse" , "Car", "Train" , "Person" , "Street" , "Food" , "Sports Event" , "Squid With Attitude" , "A Couple in Love" , "Rollercoaster" , "Musical Instrument", "Camera" , "Park", "River", "Awkward Rhino", "Marvel Character" , "Embarrassed Comedian" , "Walking Man" , "Business Woman" , "Cheese chasing a mouse"]
     shades = 0
 
     if medium == "Watercolour Paint":
