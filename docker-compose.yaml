@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   service1:
-    image: yasirsatti/sofia-project-2_service1
+    image: yasirsatti/craft-srv1
     build: ./service1
     ports:
     - target: 5000
@@ -11,7 +11,7 @@ services:
     - service4
     
   service2:
-    image: yasirsatti/sofia-project-2_service2
+    image: yasirsatti/craft-srv2
     build: ./service2
     ports:
     - target: 5000
@@ -19,7 +19,7 @@ services:
       protocol: tcp
       
   service3:
-    image: yasirsatti/sofia-project-2_service3
+    image: yasirsatti/craft-srv3
     build: ./service3
     ports:
     - target: 5000
@@ -27,7 +27,7 @@ services:
       protocol: tcp
       
   service4:
-    image: yasirsatti/sofia-project-2_service4
+    image: yasirsatti/craft-srv4
     build: ./service4
     ports:
     - target: 5000
