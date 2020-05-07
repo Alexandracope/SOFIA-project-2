@@ -109,8 +109,8 @@ Throughout the different stages of our development process it was important to t
 . Visual studio Code
 . Python
 . Linux Scripting 
-. [Trello](https://trello.com/qasoloproject)
-. [Git](https://github.com/ayshamarty/SoloProject.git)
+. [Trello](https://trello.com/b/f0BXMr16/sofia-project-2)
+. [Git](https://github.com/Alexandracope/SOFIA-project-2)
 . Jenkins
 . Microsoft Azure
 . Selinium
