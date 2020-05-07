@@ -7,8 +7,8 @@ In fulfilment of the solo project assignment due Monday week 7 at QA consulting.
    * [Solution](#solution)
    
 [Architecture](#architecture)
-   * [Entity Relationship Diagrams](#erd)
-   * [Multi Tier Architechture Diagram](#mla)
+   * [CI Pipeline](#CI)
+   
 	
 [Testing](#testing)
    * [Report](#report)
@@ -18,6 +18,8 @@ In fulfilment of the solo project assignment due Monday week 7 at QA consulting.
    * [Technologies Used](#tech)
      
 [Front End Design](#FE)
+
+[Overview](#group)
 
 [Improvements for the Future](#improve)
 
