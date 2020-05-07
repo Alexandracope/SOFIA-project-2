@@ -17,7 +17,6 @@ In fulfilment of the solo project assignment due Monday week 7 at QA consulting.
 [Deployment](#depl)
    * [Technologies Used](#tech)
      
-[Front End Design](#FE)
 
 [Overview](#group)
 
@@ -87,20 +86,10 @@ Before staring to build our application we wanted to look into all the different
 
 
 
-#### Delivered solution
-.
-
-
-
 <a name="testing"></a>
 ## Testing
 
 Throughout the different stages of our development process it was important to test the different services to ensure that they work both together and separately. 
-
-
-### Report
-
-
 
 
 <a name="tech"></a>
@@ -118,10 +107,6 @@ Throughout the different stages of our development process it was important to t
 . Docker
 . Terrafrom
 . Kubernetes
-
-<a name="FE"></a>
-## Front End Design
-
 
 <a name="improve"></a>
 ## Overview of working proccess 
