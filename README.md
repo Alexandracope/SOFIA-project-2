@@ -65,6 +65,11 @@ The risk assessment carried on the project is stated ![here](/docs/craft_Risk_As
 
 Test cases were developed for all 4 services.
 Unit and Integration testing was carried out.
+Test coverage achieved:
+* Service 1 = 87%
+* Service 2 = 100%
+* Service 3 = 100%
+* Service 4 = 20%
 
 Find reports ![here](/docs/Craft_Presentation_testing.pdf)
 
