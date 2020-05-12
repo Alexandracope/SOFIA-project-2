@@ -13,6 +13,8 @@ This is a collaborative group project ([team](#auth))
 
 [Risk Assessment](#risk)
 
+[Feature Branch Workflow](#featurebranch)
+
 [Testing](#testing)
      
 [CI Pipeline](#cipipeline)
@@ -78,6 +80,12 @@ The full trello board for the project can be assessed [here](https://trello.com/
 
 The risk assessment carried on the project is stated ![here](/docs/craft_Risk_Assessment_V2.pdf)
 
+<a name="featurebranch"></a>
+Feature Branch Workflow
+
+This is a collaborative project so each team member working on a particular feature had his/her own development branch. Pull requests are used to discuss changes before commiting them to master branch.
+
+![featurebranch](/docs/caft_Presentation_feature_branch.jpg)
 
 <a name="testing"></a>
 ## Testing
