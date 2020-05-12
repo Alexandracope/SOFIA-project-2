@@ -41,7 +41,7 @@ We worked on developing a craft app. The user will press a generation button whi
 <a name="risk"></a>
 ## Risk Assessment
 
-![risk](/docs/craft_Risk_assessment.pdf)
+![risk](/docs/craft_Risk_assessment_V2.pdf)
 
 <a name="testing"></a>
 ## Testing
