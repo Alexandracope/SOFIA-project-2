@@ -46,8 +46,10 @@ The risk assessment carried on the project is stated ![here](/docs/craft_Risk_As
 <a name="testing"></a>
 ## Testing
 
+Test cases were developed for all 4 services.
+Unit and Integration testing was carried out.
 
-### Report
+Find reports ![here](/docs/Craft_Presentation_testing.pdf)
 
 
 
