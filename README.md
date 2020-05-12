@@ -54,34 +54,35 @@ The risk assessment carried on the project is stated ![here](/docs/craft_Risk_As
 <a name="cipipeline"></a>
 ## CI Pipeline
 
-#### Source code – Visual Studio code (Python)
-#### Version Control System – Github
-. Project Tracking – Trello
-. CI Server – Jenkins
-. Build Envioronment/Infrastructure – Azure
-. Pytest/Selinium 
-. Infrastructure deployment – Terraform 
-. Containersation – Docker
-. Orcherstration - Kubernetes
-. Staging/Live Enviroment – Kubernetes
+* Source code – Visual Studio code (Python)
+* Version Control System – Github
+* Project Tracking – Trello
+* CI Server – Jenkins
+* Build Envioronment/Infrastructure – Azure
+* Pytest/Selinium 
+* Infrastructure deployment – Terraform 
+* Containersation – Docker
+* Orcherstration - Kubernetes
+* Staging/Live Enviroment – Kubernetes
 
 Find ![here](/docs/Craft_Presentation_CI_pipeline.pdf) diagram illustrating the CI pipeline
 
 <a name="tech"></a>
 ### Technologies Used
 
-. Visual studio Code
-. Python
-. Linux scripting
-. Trello 
-. Github
-. Jenkins
-. Microsoft Azure
-. Selenium
-. Pytest
-. Terrafrom
-. Docker
-. Kubernetes
+* Visual studio Code
+* Python
+* Linux scripting
+* Trello 
+* Github
+* Jenkins
+* Microsoft Azure
+* Google Cloud Platforms (GCP)
+* Selenium
+* Pytest
+* Terrafrom
+* Docker
+* Kubernetes
 
 
 <a name="FE"></a>
