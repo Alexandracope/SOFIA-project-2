@@ -1,6 +1,6 @@
 # Craft Application
 
-In fulfilment of the solo project assignment due Monday week 7 at QA consulting.
+This is a collaborative group project ([team](#auth))
 
 ## Index
 [Brief](#brief)
@@ -28,12 +28,12 @@ In fulfilment of the solo project assignment due Monday week 7 at QA consulting.
 <a name="brief"></a>
 ## The Brief
 
-
+ We were required to create an application using a micro service architecture that when deployed will be able to handle rolling updates without causing any interruptions to the user. As our final project we are required to utilise all of the skills and technologies we have learned over the last 12 weeks to make it run in the most agile way.
 
 <a name="solution"></a>
 ### Solution
 
-
+We worked on developing a craft app. The user will press a generation button which will then provide them with a colour, a medium, a subject matter and a number of shades. The idea behind our app is that using the outputs the user can then go away and create the output given. 
 
 <a name="architecture"></a>
 ## Architecture
