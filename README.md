@@ -53,7 +53,7 @@ Both of the outputs for each service will then be sent to service 4.
 Once this service has received the outputs for both service two and three it will then generate a subject matter and number of shades based off the information it has previously been given. 
 Once all of this information has been brought together it will then be sent back to service one where it will be displayed to the user. 
 
-![architecture](/docs/Craft_Presentation_archiecture.jpg) 
+![architecture](/docs/caft_Presentation_architecture.jpg) 
 
 <a name="risk"></a>
 ## Risk Assessment
