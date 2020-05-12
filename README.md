@@ -7,9 +7,9 @@ This is a collaborative group project ([team](#auth))
    * [Solution](#solution)
    
 [Architecture](#architecture)
-   * [Entity Relationship Diagrams](#erd)
-   * [Multi Tier Architechture Diagram](#mla)
-	
+
+[Risk Assessment](#risk)
+
 [Testing](#testing)
    * [Report](#report)
 
@@ -37,18 +37,11 @@ We worked on developing a craft app. The user will press a generation button whi
 
 <a name="architecture"></a>
 ## Architecture
-<a name="erd"></a>
-### Entity Relationship Diagrams
-#### Initial plan
 
+<a name="risk"></a>
+## Risk Assessment
 
-#### Delivered solution
-.
-
-<a name="mla"></a>
-### Multi Tier Architecture Diagram
-
-
+![risk](/docs/craft_Risk_assessment.pdf)
 
 <a name="testing"></a>
 ## Testing
