@@ -143,12 +143,6 @@ Find ![here](/docs/Craft_Presentation_CI_pipeline.pdf) diagram illustrating the 
 
 When creating our Trello board and using MoSCoW there were aspects to our application that we were not able to get done within the time along with also doing our continued studies. In the future upon completing the course we would like to either as a group or individually be able to complete some of these. For example, to make our application a little it more personal to the user we would have an account they would sign into so that every time they generate it will store their result in a database with relationships in its tables so it doesn’t get the same result again. 
 
-
-
-When creating our Trello board and using MoSCoW there were aspects to our application that we were not able to get done within the time along with also doing our continued studies. In the future upon completing the course we would like to either as a group or individually be able to complete some of these. For example, to make our application a little it more personal to the user we would have an account they would sign into so that every time they generate it will store their result in a database with relationships in its tables so it doesn’t get the same result again. 
-
-
-
 <a name="auth"></a>
 ## Team
 
