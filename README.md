@@ -65,7 +65,7 @@ This captured the following:
 * Sprints planning
 * Sprints retrospectives
 
-![projectmanagement](/docs/caft_Presentation_project.jpg)
+[projectmanagement](/docs/caft_Presentation_project.jpg)
 
 The full trello board for the project can be assessed ![here](https://trello.com/b/f0BXMr16/sofia-project-2)
 
