@@ -90,7 +90,7 @@ We worked on developing a craft app. The user will press a generation button whi
 <a name="auth"></a>
 ## Team
 
-Yassir Satti   - Product Owner/Developer
-Tiffany Cowman - Developer
-Alexandra Cope - SCRUM Master
+### Yassir Satti   - Product Owner/Developer
+### Tiffany Cowman - Developer
+### Alexandra Cope - SCRUM Master
 
