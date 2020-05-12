@@ -73,6 +73,15 @@ Find reports ![here](/docs/Craft_Presentation_testing.pdf)
 <a name="cipipeline"></a>
 ## CI Pipeline
 
+The delivered milestones are:
+* Use jenkins to create builds successfully
+* Build images and push them to docker hub private registry
+* Pulling updated images from docker hub private registry
+* Deploy and run pods on kubernetes cluster. Each pod runs 2 replica of a service container and a service for the pod
+* Update images on pods while maintaining wep app service coninuity
+
+### CI pipeline components:
+
 * Source code – Visual Studio code (Python)
 * Version Control System – Github
 * Project Tracking – Trello
