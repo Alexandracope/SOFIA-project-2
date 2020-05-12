@@ -9,6 +9,8 @@ This is a collaborative group project ([team](#auth))
    
 [Architecture](#architecture)
 
+[Project management](#projectmanagement)
+
 [Risk Assessment](#risk)
 
 [Testing](#testing)
@@ -51,6 +53,22 @@ Once all of this information has been brought together it will then be sent back
 
 ![architecture](/docs/caft_Presentation_architecture.jpg) 
 
+<a name="projectmanagement")
+## Project management
+
+* Trello was used to manage the project
+* Kanban framework was used to implement agile/SCRUM approach of running the project
+
+This captured the following:
+* User stories & points
+* Requirements using MoSoCoW approach 
+* Sprints planning
+* Sprints retrospectives
+
+![projectmanagement](/docs/caft_Presentation_project.jpg)
+
+The full trello board for the project can be assessed ![here](https://trello.com/b/f0BXMr16/sofia-project-2)
+
 <a name="risk"></a>
 ## Risk Assessment
 
@@ -75,6 +93,7 @@ Find reports ![here](/docs/Craft_Presentation_testing.pdf)
 ## CI Pipeline
 
 The delivered milestones are:
+* Setup and deploy the needed infrastructure using terraform scripts
 * Use jenkins to create builds successfully
 * Build images and push them to docker hub private registry
 * Pulling updated images from docker hub private registry
