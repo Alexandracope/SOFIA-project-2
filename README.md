@@ -38,6 +38,23 @@ We worked on developing a craft app. The user will press a generation button whi
 <a name="architecture"></a>
 ## Architecture
 
+We created a micro service architecture to determine how our different services would communicate with each other in order to make the application run. 
+
+* Service one:
+A user loads the webpage which will show them a generator button. 
+
+* Service two & three:
+Once the user has pressed the generate button a request will be sent to both services simultaneously. 
+-	Service 2 will randomly generate a colour 
+-	Service 3 will randomly generate a medium
+Both of the outputs for each service will then be sent to service 4.
+
+* Service four:
+Once this service has received the outputs for both service two and three it will then generate a subject matter and number of shades based off the information it has previously been given. 
+Once all of this information has been brought together it will then be sent back to service one where it will be displayed to the user. 
+
+Find ![here](/docs/Craft_Presentation_architecture.pdf) 
+
 <a name="risk"></a>
 ## Risk Assessment
 
