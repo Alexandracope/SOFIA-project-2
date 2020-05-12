@@ -54,8 +54,8 @@ The risk assessment carried on the project is stated ![here](/docs/craft_Risk_As
 <a name="cipipeline"></a>
 ## CI Pipeline
 
-. Source code – Visual Studio code (Python)
-. Version Control System – Github
+#### Source code – Visual Studio code (Python)
+#### Version Control System – Github
 . Project Tracking – Trello
 . CI Server – Jenkins
 . Build Envioronment/Infrastructure – Azure
@@ -65,7 +65,7 @@ The risk assessment carried on the project is stated ![here](/docs/craft_Risk_As
 . Orcherstration - Kubernetes
 . Staging/Live Enviroment – Kubernetes
 
-Find ![here](/docs/Craft Presentation_CI_pipeline.pdf) digram illustrating the CI pipeline
+Find ![here](/docs/Craft_Presentation_CI_pipeline.pdf) diagram illustrating the CI pipeline
 
 <a name="tech"></a>
 ### Technologies Used
