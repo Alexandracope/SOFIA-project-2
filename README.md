@@ -65,6 +65,8 @@ The risk assessment carried on the project is stated ![here](/docs/craft_Risk_As
 * Orcherstration - Kubernetes
 * Staging/Live Enviroment – Kubernetes
 
+![cipipeline](/docs/caft_Presentation_CI_pipeline.jpg)
+
 Find ![here](/docs/Craft_Presentation_CI_pipeline.pdf) diagram illustrating the CI pipeline
 
 <a name="tech"></a>
