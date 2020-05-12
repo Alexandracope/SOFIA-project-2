@@ -4,23 +4,19 @@ This is a collaborative group project ([team](#auth))
 
 ## Index
 [Brief](#brief)
-   * [Solution](#solution)
+
+[Solution](#solution)
    
 [Architecture](#architecture)
 
 [Risk Assessment](#risk)
 
 [Testing](#testing)
-   * [Report](#report)
-
      
 [CI Pipeline](#cipipeline)
-   * [Technologies Used](#tech)
+
+[Technologies Used](#tech)
      
-[Front End Design](#FE)
-
-[Improvements for the Future](#improve)
-
 [Authors](#auth)
 
 [Acknowledgements](#ack)
@@ -118,17 +114,6 @@ Find ![here](/docs/Craft_Presentation_CI_pipeline.pdf) diagram illustrating the 
 * Terrafrom
 * Docker
 * Kubernetes
-
-
-<a name="FE"></a>
-## Front End Design
-### Wireframes
-
-### Final Appearance
-
-<a name="improve"></a>
-## Improvements for the Future
-
 
 
 <a name="auth"></a>
