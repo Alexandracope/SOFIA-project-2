@@ -14,7 +14,7 @@ This is a collaborative group project ([team](#auth))
    * [Report](#report)
 
      
-[Deployment](#depl)
+[CI Pipeline](#cipipeline)
    * [Technologies Used](#tech)
      
 [Front End Design](#FE)
@@ -41,7 +41,7 @@ We worked on developing a craft app. The user will press a generation button whi
 <a name="risk"></a>
 ## Risk Assessment
 
-![risk](/docs/craft_Risk_Assessment_V2.pdf)
+The risk assessment carried on the project is stated ![here](/docs/craft_Risk_Assessment_V2.pdf)
 
 <a name="testing"></a>
 ## Testing
@@ -51,23 +51,38 @@ We worked on developing a craft app. The user will press a generation button whi
 
 
 
-<a name="depl"></a>
-## Deployment
+<a name="cipipeline"></a>
+## CI Pipeline
 
+. Source code – Visual Studio code (Python)
+. Version Control System – Github
+. Project Tracking – Trello
+. CI Server – Jenkins
+. Build Envioronment/Infrastructure – Azure
+. Pytest/Selinium 
+. Infrastructure deployment – Terraform 
+. Containersation – Docker
+. Orcherstration - Kubernetes
+. Staging/Live Enviroment – Kubernetes
+
+Find ![here](/docs/Craft Presentation_CI_pipeline.pdf) digram illustrating the CI pipeline
 
 <a name="tech"></a>
 ### Technologies Used
 
-* H2 Database Engine - Database
-* Java - Logic
-* Wildfly - Deployment
-* Jenkins - CI Server
-* Maven - Dependency Management
-* Jacoco, EclEmma, Surefire - Test Reporting
-* SonarQube - Static Testing
-* [Git](https://github.com/ayshamarty/SoloProject.git) - VCS
-* [Trello](https://trello.com/qasoloproject) - Project Tracking
-* GCP - Live Environment
+. Visual studio Code
+. Python
+. Linux scripting
+. Trello 
+. Github
+. Jenkins
+. Microsoft Azure
+. Selenium
+. Pytest
+. Terrafrom
+. Docker
+. Kubernetes
+
 
 <a name="FE"></a>
 ## Front End Design
