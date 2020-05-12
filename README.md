@@ -18,6 +18,8 @@ This is a collaborative group project ([team](#auth))
 [CI Pipeline](#cipipeline)
 
 [Technologies Used](#tech)
+
+[Improvements](#improve)
      
 [Authors](#auth)
 
@@ -26,7 +28,7 @@ This is a collaborative group project ([team](#auth))
 <a name="brief"></a>
 ## The Brief
 
- We were required to create an application using a micro service architecture that when deployed will be able to handle rolling updates without causing any interruptions to the user. As our final project we are required to utilise all of the skills and technologies we have learned over the last 12 weeks to make it run in the most agile way.
+We were required to create an application using a micro service architecture that when deployed will be able to handle rolling updates without causing any interruptions to the user. As our final project we are required to utilise all of the skills and technologies we have learned over the last 12 weeks to make it run in the most agile way.
 
 <a name="solution"></a>
 ### Solution
@@ -76,6 +78,7 @@ The full trello board for the project can be assessed [here](https://trello.com/
 
 The risk assessment carried on the project is stated ![here](/docs/craft_Risk_Assessment_V2.pdf)
 
+
 <a name="testing"></a>
 ## Testing
 
@@ -88,8 +91,6 @@ Test coverage achieved:
 * Service 4 = 20%
 
 Find reports ![here](/docs/Craft_Presentation_testing.pdf)
-
-
 
 <a name="cipipeline"></a>
 ## CI Pipeline
@@ -119,6 +120,7 @@ The delivered milestones are:
 
 Find ![here](/docs/Craft_Presentation_CI_pipeline.pdf) diagram illustrating the CI pipeline
 
+
 <a name="tech"></a>
 ### Technologies Used
 
@@ -136,6 +138,12 @@ Find ![here](/docs/Craft_Presentation_CI_pipeline.pdf) diagram illustrating the 
 * Docker
 * Kubernetes
 
+<a name="improve"></a>
+## Improvements
+
+When creating our Trello board and using MoSCoW there were aspects to our application that we were not able to get done within the time along with also doing our continued studies. In the future upon completing the course we would like to either as a group or individually be able to complete some of these. For example, to make our application a little it more personal to the user we would have an account they would sign into so that every time they generate it will store their result in a database with relationships in its tables so it doesn’t get the same result again. 
+
+
 
 <a name="auth"></a>
 ## Team
@@ -143,4 +151,5 @@ Find ![here](/docs/Craft_Presentation_CI_pipeline.pdf) diagram illustrating the 
 ### Yassir Satti   - Product Owner/Developer
 ### Tiffany Cowman - Developer
 ### Alexandra Cope - SCRUM Master
+
 
