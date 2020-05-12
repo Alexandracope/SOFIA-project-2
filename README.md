@@ -63,7 +63,8 @@ This captured the following:
 * User stories & points
 * Requirements using MoSoCoW approach 
 * Sprints planning
-* Sprints retrospectives
+* Sprint reviews
+* Sprint retrospectives
 
 ![projectmanagement](/docs/caft_Presentation_project.jpg)
 ![projectmanagement](/docs/caft_Presentation_project2.jpg)
