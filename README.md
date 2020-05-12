@@ -111,7 +111,7 @@ The delivered milestones are:
 * Build Envioronment/Infrastructure – Azure
 * Pytest/Selinium 
 * Infrastructure deployment – Terraform 
-* Containersation – Docker
+* Containerisation – Docker
 * Orcherstration - Kubernetes
 * Staging/Live Enviroment – Kubernetes
 
