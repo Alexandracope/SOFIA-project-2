@@ -5,8 +5,8 @@ pipeline{
                 steps{
                     sh """
                         ssh craft@craft  << EOF
-                        git clone -b development-yasir https://github.com/Alexandracope/SOFIA-project-2.git
                         rm -rf SOFIA-project-2
+                        git clone -b development-yasir https://github.com/Alexandracope/SOFIA-project-2.git
                         cd SOFIA-project-2
                         docker-compose build
                         docker login -u yasirsatti -p Mstr00slv#
