@@ -3,8 +3,8 @@ pipeline{
         stages{
             stage('build'){
                 steps{
-                    sh "ssh craft@craft docker rm -f $(docker ps --all -q)"
-                    sh "ssh craft@craft docker rmi -f $(docker images -q)"
+                    // sh "ssh craft@craft docker rm -f $(docker ps --all -q)"
+                    // sh "ssh craft@craft docker rmi -f $(docker images -q)"
                     sh "ssh craft@craft rm -rf SOFIA-project-2"
                     sh "ssh craft@craft git clone -b development-yasir https://github.com/Alexandracope/SOFIA-project-2.git"
                     sh "ssh craft@craft cd SOFIA-project-2"
