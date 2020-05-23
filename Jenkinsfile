@@ -19,7 +19,11 @@ pipeline{
             }
             stage('Deploy'){
                 steps{
-                    sh "ssh craft@craft kubectl create -f craft.yaml"
+                    sh """ 
+                        ssh craft@craft << EOF
+                        cd SOFIA-project-2
+                        kubectl create -f craft.yaml
+                    """
                 }
             }
         }    
