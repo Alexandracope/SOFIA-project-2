@@ -12,7 +12,6 @@ pipeline{
                         ssh craft@craft  << EOF
                         cd SOFIA-project-2
                         docker-compose build
-                        EOF
                         """
                 }
             }
