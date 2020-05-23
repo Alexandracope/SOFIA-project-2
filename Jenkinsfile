@@ -8,7 +8,7 @@ pipeline{
                     sh "ssh craft@craft rm -rf SOFIA-project-2"
                     sh "ssh craft@craft git clone -b development-yasir https://github.com/Alexandracope/SOFIA-project-2.git"
                     // sh "ssh craft@craft cd SOFIA-project-2"
-                    sh "ssh craft@craft  << EOF cd SOFIA-project-2 && docker-compose build \ EOF"
+                    sh "ssh craft@craft  << EOF cd SOFIA-project-2 && docker-compose build EOF"
                 }
             }
             stage('Deploy'){
